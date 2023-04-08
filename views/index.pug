@@ -1,0 +1,11 @@
+doctype html
+html
+  head 
+    title #{ title }
+    link(rel='stylesheet' href='/stylesheets/style.css')
+  body 
+    h1 #{ title }
+    a(href='/new') Write a new board 
+    ul 
+      for message in messages
+        li Name: #{ message.user } / Text: #{ message.text }
